@@ -1,0 +1,23 @@
+interface:
+  display_name: test generation discipline
+  short_description: Generation-side discipline for writing tests during implementation
+    — the defect-sentence gate every test must pass before it is written, risk-tiered
+    entitlements (glue code gets zero dedicated tests by default), the behavior-manifest-before-test-code
+    procedure, placement rules (cheapest sufficient level, one home per behavior),
+    authoring rules that keep counts low and value high, per-task test budgets, and
+    the CI runtime ratchet. Use whenever tests are being written or planned in any
+    implementation, sprint task, or PR — "write tests for X", "add coverage", "implement
+    X with tests", TDD, deciding how many or which tests a feature needs, or reviewing
+    the tests in a diff. Trigger even when the task never questions test strategy
+    — the manifest and budget come before the first test file. For pruning an already-bloated
+    suite use test-suite-audit; for which suite types must exist and what gates a
+    release use saas-qa-strategy.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
